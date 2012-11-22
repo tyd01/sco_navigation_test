@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3" xmlns:imsss="http://www.imsglobal.org/xsd/imsss" xmlns:adlseq="http://www.adlnet.org/xsd/adlseq_v1p3" xmlns:adlnav="http://www.adlnet.org/xsd/adlnav_v1p3" identifier="MANIFEST-2F10A7A25FC691A6212BD9CB0B505D44" xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd http://ltsc.ieee.org/xsd/LOM lom.xsd http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd http://www.imsglobal.org/xsd/imsss imsss_v1p0.xsd http://www.adlnet.org/xsd/adlseq_v1p3 adlseq_v1p3.xsd http://www.adlnet.org/xsd/adlnav_v1p3 adlnav_v1p3.xsd http://www.imsglobal.org/xsd/imsss imsss_v1p0.xsd">
+    <metadata>
+        <schema>ADL SCORM</schema>
+        <schemaversion>2004 3rd Edition</schemaversion>
+    </metadata>
+    <organizations default="ORG">
+        <organization identifier="ORG" structure="hierarchical">
+            <title>06 Navigation</title>
+            <item identifier="page1" isvisible="true" identifierref="RES-page1">
+                <title>page1</title>
+                <item identifier="page2" isvisible="true" identifierref="RES-page2">
+                    <title>page2</title>
+                </item>
+                <item identifier="page3" isvisible="true" identifierref="RES-page3">
+                    <title>page3</title>
+                </item>
+                <imsss:sequencing>
+                    <imsss:controlMode choice="true" choiceExit="false" flow="false" useCurrentAttemptObjectiveInfo="false" useCurrentAttemptProgressInfo="false"/>         
+                </imsss:sequencing>
+            </item>         
+        </organization>
+    </organizations>
+    <resources>
+        <resource identifier="RES-page1" adlcp:scormType="sco" type="webcontent" href="page1.html">
+          <file href="page1.html" />
+          <file href="js/jquery-1.8.3.min.js" />
+          <file href="js/SCORM_API_wrapper.js" />
+          <file href="js/lmsCommunication.js" />
+        </resource>
+        <resource identifier="RES-page2" adlcp:scormType="sco" type="webcontent" href="page2.html">
+          <file href="page2.html" />
+          <file href="js/jquery-1.8.3.min.js" />
+          <file href="js/SCORM_API_wrapper.js" />
+          <file href="js/lmsCommunication.js" />
+        </resource>
+        <resource identifier="RES-page3" adlcp:scormType="sco" type="webcontent" href="page3.html">
+          <file href="page3.html" />
+          <file href="js/jquery-1.8.3.min.js" />
+          <file href="js/SCORM_API_wrapper.js" />
+          <file href="js/lmsCommunication.js" />
+        </resource>
+    </resources>
+</manifest>
